@@ -1,0 +1,194 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Raw Food Quiz | BPC </title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  
+  <link rel="stylesheet" href="rawfoodquiz.css" type="text/css">
+
+
+</head>
+
+<body>
+  <h1 id="head">Assess your knowledge of raw pet food with this quiz.</h1>
+  <h2 id="sub">No cheating!</h2>
+  <br>
+  <form name="myform">
+    1. As food is cooked, what decreases?
+    <br>
+    <input type="radio" name="q1" value="a"> Protein </br>
+    <input type="radio" name="q1" value="b"> Phosphorous </br>
+    <input type="radio" name="q1" value="c"> Nutritional value </br>
+    <input type="radio" name="q1" value="d"> Triglycerides </br>
+    <br>
+    
+    2. Fill in the blanks:
+    When ______ and ______ are ______, they are ______.
+    <br>
+    <input type="radio" name="q2" value="a"> starches, lipids, baked, burnt </br>
+    <input type="radio" name="q2" value="b"> proteins, amino acids, heated up, changed </br>
+    <input type="radio" name="q2" value="c"> proteins, polysacharides, frozen, changed </br>
+    <br>
+    
+    3. What does frozen food contain that's similar to the prey animals would consume in the wild?
+    <br>
+    <input type="radio" name="q3" value="a"> Marrow </br>
+    <input type="radio" name="q3" value="b"> Water </br>
+    <input type="radio" name="q3" value="c"> Cane Sugar </br>
+    <input type="radio" name="q3" value="d"> Nitrates </br>
+    <br>
+    
+    4. What percentage of water are all living things comprised of?  
+    <br>
+    <input type="radio" name="q4" value="a">80%</br>
+    <input type="radio" name="q4" value="b">72%</br>
+    <input type="radio" name="q4" value="c">70%</br>
+    <input type="radio" name="q4" value="d">12%</br>
+    <br>
+    
+    5. What is one critically important aspect about the freezing process?  
+    <br>
+    <input type="radio" name="q5" value="a"> It keeps food fresh </br>
+    <input type="radio" name="q5" value="b"> It kills microbes </br>
+    <input type="radio" name="q5" value="c"> It prevents food from spontaneously combusting </br>
+    <input type="radio" name="q5" value="d"> It causes food to emit light </br>
+    <br>
+    
+    6. What is one critically important aspect about frozen food in general?  
+    <br>
+    <input type="radio" name="q6" value="a"> It keeps the intestinal tract healthy. </br>
+    <input type="radio" name="q6" value="b"> Eliminates all allergies. </br>
+    <input type="radio" name="q6" value="c"> The ingredients consist of only what your pet needs. </br>
+    <input type="radio" name="q6" value="d"> It keeps the animal's immune system strong. </br>
+    <br>
+    
+    7. True or False? Frozen food is closest to what nature provides.
+    <br>
+    <input type="radio" name="q7" value="a"> True </br>
+    <input type="radio" name="q7" value="b"> False </br><br>
+    
+    8. What is the difference between raw meat from the supermarket and raw pet food? 
+    <br>
+    <input type="radio" name="q8" value="a"> It's cleaner since it's meant to be consumed raw. </br>
+    <input type="radio" name="q8" value="b"> It's dirtier because humans aren't supposed to eat it. </br>
+    <input type="radio" name="q8" value="c"> The quantity of sodium is higher in pet food. </br>
+    <input type="radio" name="q8" value="d"> One contains more nitrogen than the other. </br>
+    <br>
+    
+    9. Fill in the blanks: Raw pet food is meant to be ________ ___. Every batch is tested for _____, no _____ ______.
+    <br>
+    <input type="radio" name="q9" value="a"> consumed cooked, microbes, pathogenic diseases </br>
+    <input type="radio" name="q9" value="b"> consumed raw, safety, harmful bacteria </br>
+    <input type="radio" name="q9" value="c"> frozen immediately, protein, cane sugar </br>
+    <input type="radio" name="q9" value="d"> baked, hygeine, artificial flavors </br>
+    <br>
+    
+    10. Which of the following does a raw diet NOT contain?
+    <br>
+    <input type="radio" name="q10" value="a"> Meat</br>
+    <input type="radio" name="q10" value="b"> Bones </br>
+    <input type="radio" name="q10" value="c"> Fruits </br>
+    <input type="radio" name="q10" value="d"> Starches </br>
+    <input type="radio" name="q10" value="e"> Vegetables </br>
+    <br>
+    
+    
+  </form>
+  
+  <script>
+  
+  var count=0;
+  
+  function check() {
+    var q1=document.myform.q1.value;
+    var q2=document.myform.q2.value;
+    var q3=document.myform.q3.value;
+    var q4=document.myform.q4.value;
+    var q5=document.myform.q5.value;
+    var q6=document.myform.q6.value;
+    var q7=document.myform.q7.value;
+    var q8=document.myform.q8.value;
+    var q9=document.myform.q9.value;
+    var q10=document.myform.q10.value;
+    
+    if(q1=="c") {
+        count++;
+    }
+    
+    if(q2=="b") {
+        count++;
+    }
+    
+    if(q3=="b") {
+        count++;
+    }
+    
+    if(q4=="c") {
+        count++;
+    }
+    
+    if(q5=="a") {
+        count++;
+    }
+    
+    if(q6=="c") {
+        count++;
+    }
+    
+    if(q7=="a") {
+        count++;
+    }
+    
+    if(q8=="a") {
+        count++;
+    }
+    
+    if(q9=="b") {
+        count++;
+    }
+    
+    if(q10=="d") {
+        count++;
+    }
+    
+    alert("Scroll up for your score.");
+        document.getElementById("head").innerText = "You got" + " " + count;
+        if(count < 10) {
+            document.getElementById("sub").innerText = "Nice try, but it looks like you need to study more.";
+        }
+        else { 
+        document.getElementById("sub").innerText = "Great!";
+        }
+    
+    }
+    
+
+
+  </script>
+  <button id="submit" onClick="check()"> Submit </button>
+  
+  <!-- Footer -->
+	<section id="footer">
+		<div class="footer container">
+			<div class="social-icon">
+				<div class="social-item">
+					<a href="https://www.instagram.com/_tremmel/"><img src="https://img.icons8.com/dusk/64/000000/instagram-new.png"/></a>
+				</div>
+				<div class="social-item">
+					<a href="https://www.youtube.com/watch?v=t5XW020hRx4"><img src="https://img.icons8.com/cotton/64/000000/youtube.png"/></a>
+				</div>
+				<div class="social-item">
+					<a href="https://github.com/chloes0mt"><img src="https://img.icons8.com/cute-clipart/64/000000/github.png"/></a>
+				</div>
+			</div>
+			<p>Copyright @ 2020 Dylan Tremmel. All rights reserved. </p>
+		</div>
+	</section>
+	<!-- End Footer -->
+	
+</body>
+</html>
