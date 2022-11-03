@@ -1,3 +1,5 @@
+View here: https://dylans0gt.github.io/quizforcoworkers/
+
 This is a simple quiz to test my coworkers on their knowledge of raw pet food. 
 ---
 The Javascript logic is simple; once the user submits the quiz, the score is calculated by an if statement that checks the value of the selected 
