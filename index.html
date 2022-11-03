@@ -158,12 +158,13 @@
     alert("Scroll up for your score.");
         document.getElementById("head").innerText = "You got" + " " + count + " " + "out of 10";
         if(count < 10) {
+		count = count;
             document.getElementById("sub").innerText = "Nice try, but it looks like you need to study more.";
         }
         else { 
+		count = count;
         document.getElementById("sub").innerText = "Great!";
         }
-    
     }
     
 
